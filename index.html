@@ -1,0 +1,114 @@
+
+<!-- Frontend   -->
+<html>
+ <head>
+   <style>
+     .CustomInfo {
+display: flex;
+     }
+      .GameInfo {
+display: flex;
+     }
+     .child1{
+       flex:1;
+
+     }
+     
+   </style>
+<title name="Video Game Terminal"> Store </title>
+ </head>
+  <body>
+    </form>
+    <?php
+    echo "<h1> Video Game Terminal </h1>"
+      ?> 
+<?php> 
+     require 'config.php';
+     <br>
+     echo "connecting to config";
+     
+  <div class="GameInfo">
+    <div class="child1">
+    <h3> Find Game </h3>
+    <form action="index.php" method="get">
+    Barcode: <input type="text" name="in1"><br>
+    <br>
+    <input style="text-align:center"value="input barcode"         type="submit">
+      </div>
+      </form>
+
+       <div class="child1"style=" margin-left:100px;">
+       <h3> Result </h3>
+       <label>Title:</label>
+       <br>
+       <label>Copies:</label>
+       <br>
+       <label>Rating:</label>
+       </div> 
+       </div>
+       <br>
+       <br>
+  <?php>
+  </body>
+
+  <body>
+    <hr>  
+  </body>
+
+  <body> 
+     <php> 
+       <div class="CustomInfo">
+<br>
+        
+         <div class="child1">
+        <h3> Find Customer </h3>
+           <form action="index.php" method="post">
+    Store ID: <input style="color:blue" type="number" name="in2" min="1" max="3">
+         <br>
+         <br>
+           <input value="input ID" type="submit">
+           </form>
+         </div>
+          <div class="child1"style=" margin-left:100px;">
+           <h3> Result </h3>
+        <!--  Need to make get request from database table -->
+           <label>Name: </label>
+            <?php 
+    echo  $_POST["in2"]; ?>
+           <br>
+           <label>Customer:</label>
+           <br>
+           <label>Restriction:</label>
+             <br>
+             <label>Credit Card:</label>
+           
+           </div> 
+         
+       </div>
+       <br>
+       <br>
+       
+    
+         <br>
+          <br>
+          <br>
+ 
+      <div style="text-align:center">
+        
+        <input style="color:blue"value="purchase"type="submit">
+        <br>
+        <br>
+       <label>Succeeded or Failed</label>
+      </div>
+        </form>
+
+   
+    <br>
+    
+
+  
+</body>
+ 
+       
+       
+</html>
